@@ -1,106 +1,66 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;  
 }
 
-body {
-    font-family: "Comic Sans", Arial, Helvetica, sans-serif, cursive;
-    font-size: 14px;
+body { 
     background-color: #A9A9F5;
+    font-family: "Comic Sans", Arial, Helvetica, sans-serif, cursive; 
 }
 
 h1 {
-    font-size: 150%;
+    font-size: 175%;
     text-align: center;
 }
 
 /* Element selector: For each box-section*/
-box-section {
+section {
     background-color: #999999;
     border: 1px solid black;
-    margin: 0 0 25px 0;
+    margin: 5px 10px 10px 10px;
     padding: 0;
 }
 
 /* Every h2 that is inside box-section (headings)*/
-box-section h2 {
-    border-bottom: 1px solid #000000;
-    border-left: 1px solid #000000;
+section h2 {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
     margin: 0 0 0 60%;
-    font-size: 1.25em;
+    font-size: 125%;
     text-align: center;
     padding: 2px 0;
     width: 40%;
 }
 
 /* Every p that is inside box-section (box content)*/
-box-section p {
-    padding: 0 6px 4px 6px;
-}
+section p {
+    clear: right;
+    text-align: justify;
+    width: 95%; 
+    padding-right: 5%;  
+    margin-right: 0px;
+    margin-left: auto;
+    margin-top:10px;
+    color: black;
+    overflow: auto;
+ }
 
 /* ID Selector + Descendent Selector: Every h2 that is inside a class #Chicken*/
-#chicken h2 {
+#ch h2 {
     background-color: #d59898;
     color: #161616;
-
 }
 
-/* ID Selector + Descendent Selector: Every h2 that is inside a class #Beef*/*/
-#beef h2 {
+/* ID Selector + Descendent Selector: Every h2 that is inside a class #Beef*/
+#be h2 {
     background-color: #c14543;
-    color: #e8e8e8;
+    color: #161616;
 }
 
-/* ID Selector + Descendent Selector: Every h2 that is inside a class #Sushi*/*/
-#sushi h2 {
+/* ID Selector + Descendent Selector: Every h2 that is inside a class #Sushi*/
+#su h2 {
     background-color: #e5d198;
     color: #161616;
 }
-
-
-
-/*@media (min-width: 992px) {
-    section {
-        float: left;
-        margin-right: 2.5%;
-        width: 30%;
-    }
-
-    #chicken {
-        margin-left: 2.5%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    section {
-        float: left;
-        margin-right: 2.5%;
-        width: 46.25%;
-    }
-    #chicken {
-        margin-left: 2.5%;
-    }
-
-    #sushi {
-        clear: left;
-        margin-left: 2.5%;
-        width: 95%;
-    }
-
-    #sushi h2 {
-        margin: 0 0 0 80%;
-        width: 20%;
-    }
-}
-
-@media (max-width: 767px) {
-    section {
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-        width: 95%;
-    }
-}*/
 
 .row{
     width: 100%
@@ -108,8 +68,8 @@ box-section p {
 /********** Large devices only: DESKTOP**********/
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-  }
+   float: left;
+   }
   .col-lg-1 {
     width: 8.33%;
   }
@@ -153,6 +113,7 @@ box-section p {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
+    
   .col-md-1 {
     width: 8.33%;
   }
@@ -192,8 +153,9 @@ box-section p {
 }
 
 /********** Medium devices: MOBILE**********/
-@media (min-width: 767px)  {
+@media (max-width: 767px)  {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
 }
   .col-sm-1 {
     width: 8.33%;
